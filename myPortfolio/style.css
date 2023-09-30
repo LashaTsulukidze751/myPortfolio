@@ -1,155 +1,232 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
-
 }
 :root {
     --dayThemeTextColor: rgb(44, 44, 44);
-    --Orange:#ff8b26;
+    --Orange: #ff8b26;
     --backgroundcolor: white;
+    --contactMeColor: rgb(213, 213, 213);
 }
-.dark{
-    --dayThemeTextColor:white;
-    --backgroundcolor:rgb(44, 44, 44);
 
+.dark {
+    --dayThemeTextColor: white;
+    --backgroundcolor: 
+    --contactMeColor: rgb(20,27,31)
 }
-body{
-    max-width:100%;
+a{
+    color:var(--dayThemeTextColor);
+}
+body {
+    max-width: 100%;
     min-height: 100vh;
     background-color: var(--Orange);
 }
-.wrapper{
-    max-width:350px;
+.wrapper {
+    max-width: 350px;
     margin: 5% auto;
     background: var(--backgroundcolor);
     box-shadow: 2px 2px 18px;
     min-height: 100vh;
 }
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 7%;
     color: var(--dayThemeTextColor);
 }
-header h4 a{
-    color:var(--Orange);
+header h4 a {
+    color: var(--Orange);
 }
-.header-nav{
+.header-nav {
     display: flex;
 }
-.header-nav h5 a{
+.header-nav h5 a {
     color: var(--dayThemeTextColor);
     font-size: 13px;
-    padding: 5px;  
+    padding: 5px;
 }
-.dayNightChanger{
+.dayNightChanger {
     width: 25px;
     height: 25px;
 }
-.circle{
-    width:13px;
+.circle {
+    width: 13px;
     height: 13px;
     border-radius: 50%;
-    border:2px solid
+    border: 2px solid;
 }
 /*main*/
-main{
+main {
     position: relative;
     padding: 7%;
 }
-.main-text{
+.main-text {
     position: absolute;
     color: var(--dayThemeTextColor);
     letter-spacing: 1px;
     line-height: 30px;
 }
-.beast{
+.beast {
     border: 2px solid var(--Orange);
     cursor: pointer;
 }
-main img{
+main img {
     width: 100%;
     box-shadow: 2px 2px 2px var(--Orange);
 }
-.main-text :nth-child(2),.spining-smile{
-    display: inline-block; 
+.main-text :nth-child(2),
+.spining-smile {
+    display: inline-block;
 }
-.spining-smile{
- transform: rotate(90deg);
+.spining-smile {
+    transform: rotate(90deg);
 }
-.spinner{
+.spinner {
     transition: 1s;
     transform: rotate(450deg);
-    color:var(--dayThemeTextColor);
+    color: var(--dayThemeTextColor);
     margin-left: 5px;
 }
-.spinner-remover{
+.spinner-remover {
     transition: 1s;
     transform: rotate(-360deg);
-    color:var(--backgroundcolor);
+    color: var(--backgroundcolor);
     margin-left: -1px;
 }
 /*about me*/
-.about-me{
+.about-me {
     color: var(--dayThemeTextColor);
 }
-.about-me h4{
-    color:var(--Orange)
-} 
-.four-circle{
-    min-height:227px;
+.about-me h4 {
+    margin: 30px 0px 10px;
+    color: var(--Orange);
+}
+.four-circle {
+    min-height: 227px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
+    justify-content: center;
 }
-.four-circle>div{
-    margin:2px;
-    width:120px;
+.four-circle > div {
+    margin: 2px;
+    width: 120px;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 600;
     border-radius: 50%;
     text-align: center;
-    border:5px solid var(--Orange);
+    border: 5px solid var(--Orange);
     box-shadow: 0px 0px 9px rgb(75, 0, 0);
 }
-.four-circle>div>p{
+.four-circle > div > p {
     color: var(--Orange);
     opacity: 0.9;
 }
-.about-me p{
+.about-me p {
     font-size: 14px;
-    color:var(--dayThemeTextColor);
+    color: var(--dayThemeTextColor);
 }
-.P-languages>div{
-    display:flex;
+.P-languages > div {
+    display: flex;
     justify-content: space-between;
-    margin:3px 3px 3px 0px 
+    margin: 3px 3px 3px 0px;
 }
-.outer{
-    min-width:200px;
+.outer {
+    min-width: 200px;
     display: flex;
     position: relative;
     border-radius: 9px;
     overflow: hidden;
 }
-.percentage-text{
+.percentage-text {
     position: absolute;
     z-index: 1;
-    left:45%
+    left: 45%;
 }
-.inner{
+.inner {
     transition: all 1s;
     z-index: 0;
-    background-color:var(--Orange);
+    background-color: var(--Orange);
     border-radius: 7px;
     box-shadow: 3px 0px 4px;
 }
+/*****contact me ******/
+.contact-me {
+    color: var(--Orange);
+    margin: 30px 0px;
+    padding: 5px;
+    background-color: var(--contactMeColor);
+    font-size: 15px;
+}
+.contact-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    color: var(--dayThemeTextColor)
+    
+}
+.contact-me svg {
+    width: 50px;
+}
+.addres{
+    background-color: rgb(255, 139, 139);
+    fill: rgb(162, 3, 3);
+}
+.phone{
+    background-color: rgb(158, 255, 139);
+    fill: rgb(50, 181, 2);
+}
+.mail{
+    background-color: rgb(128, 173, 255);;
+    fill: rgb(0, 71, 203);
+}
+.danceup{
+    transition: all 0.2s;
+    transform: translateY(-5px);
+}
+.dancedown{
+    transition: all 0.2s;
+    transform: translateY(5px);
+}
+.line{
+    margin: 20px 0;
+    background-color: var(--dayThemeTextColor);
+    height:1px;
+    width:100%;
+}
+
+.send-message-div{
+    color:var(--dayThemeTextColor)
+}
+.send-message-div>div>input{
+    width:100%;
+}
+
+.send-message-button{
+    display: flex;
+    padding: 4px;
+    transition: all 0.3s;
+}
+.send-message-button:hover{
+    background-color: lawngreen;
+    fill: white;
+}
+.send-message-button>svg{
+    width:20px;
+}
+.message-sender-div{
+    display: flex;
+    align-items: center;
+}
+
+

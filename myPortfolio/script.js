@@ -22,7 +22,6 @@ languagesPercentages.forEach(element => {
 //day/night theme changer
 let icon =document.querySelector(".dayNightChanger");
 icon.addEventListener("click",()=>{
-    
     document.body.classList.toggle("dark");
     if(document.body.classList.contains("dark")){
         icon.src="images/night-mode.png";
@@ -31,3 +30,21 @@ icon.addEventListener("click",()=>{
     }
     
 })
+//message sender
+let nameInput = document.getElementById(`name`);
+let emailInput = document.getElementById(`email`);
+let messageInput = document.getElementById(`message`);
+document.getElementById("messageSendBtn").onclick = function(){
+    if(nameInput.value != "" && emailInput.value != "" && messageInput.value != ""){
+        document.querySelector(".sentMessage").innerHTML="message sent"
+    } else{
+        document.querySelector(".sentMessage").innerHTML="message not sent,  please fill emtpy space "
+    }
+};
+//contact me dencer
+document.getElementById("addres").onmouseover = ( )=>{
+    document.querySelector(".location").classList.add("danceup");
+    setTimeout( () => {
+        document.querySelector(".location").classList.remove("danceup")
+    },200);  
+}
