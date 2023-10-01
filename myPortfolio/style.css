@@ -190,14 +190,11 @@ main img {
     background-color: rgb(128, 173, 255);;
     fill: rgb(0, 71, 203);
 }
-.danceup{
+.addresdance{
     transition: all 0.2s;
     transform: translateY(-5px);
 }
-.dancedown{
-    transition: all 0.2s;
-    transform: translateY(5px);
-}
+
 .line{
     margin: 20px 0;
     background-color: var(--dayThemeTextColor);
@@ -217,8 +214,12 @@ main img {
     padding: 4px;
     transition: all 0.3s;
 }
-.send-message-button:hover{
+.send-message-button.sent{
     background-color: lawngreen;
+    fill: white;
+}
+.send-message-button.notsent{
+    background-color:red;
     fill: white;
 }
 .send-message-button>svg{
