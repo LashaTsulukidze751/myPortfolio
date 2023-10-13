@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.aboutMe>h2{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 200px;
+}
+.line{
+    margin:  20px 0px;
+    width:100%;
+    height: 1px;
+    background-color: rgb(49, 49, 49);
+    
+}
+.infoAboutme p{
+    margin:10px 0px;
+}
